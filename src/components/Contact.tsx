@@ -78,9 +78,12 @@ const Contact: React.FC<ContactProps> = ({ isDarkMode }) => {
                   <h4 className={`font-semibold mb-1 ${isDarkMode ? 'text-stone-100' : 'text-stone-800'}`}>
                     {t('contact.phone')}
                   </h4>
-                  <p className={`${isDarkMode ? 'text-stone-300' : 'text-stone-600'}`}>
+                  <a 
+                    href="tel:+381677787878" 
+                    className={`${isDarkMode ? 'text-stone-300 hover:text-amber-400' : 'text-stone-600 hover:text-amber-600'} transition-colors cursor-pointer`}
+                  >
                     +381 67 7 78 78 78
-                  </p>                 
+                  </a>                 
                 </div>
               </div>
 
